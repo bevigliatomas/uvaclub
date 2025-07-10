@@ -8,6 +8,9 @@
 
     <!-- Tipografía desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@900&display=swap" rel="stylesheet">
 
     <!-- Framework CSS de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
@@ -44,43 +47,26 @@
 <!-- /NAVBAR -->
 
 <!-- HERO: Sección de portada con llamado a la acción -->
-<section class="hero-section d-flex align-items-center">
+<section class="hero-section">
   <div class="container">
-    <div class="row align-items-center">
-      <!-- Texto principal -->
-      <div class="col-lg-6 text-white">
+    <div class="row align-items-center flex-column-reverse flex-lg-row">
+      
+      <!-- Texto -->
+      <div class="col-12 col-lg-6 text-center text-lg-start px-4 py-5">
         <h1 class="h1-custom">UN VINO QUE SUENA A VOS</h1>
         <p class="p-custom">Cada mes, vinos seleccionados con propósito, directo a tu puerta.</p>
-        <div class="d-flex gap-3 mt-4">
-          <a href="#" class="btn btn-dark">VER MÁS</a>
-        </div>
+        <a href="#" class="btn btn-dark mt-3">VER MÁS</a>
       </div>
-      <!-- Imagen destacada -->
-      <div class="col-lg-6 text-center">
-        <img src="imgs/foto_hero.png" class="img-fluid img-rounded" alt="Imagen Hero">
+
+      <!-- Imagen -->
+      <div class="col-12 col-lg-6 text-center px-4 py-5">
+        <img src="imgs/foto-hero-32.png" alt="Imagen Hero" class="hero-img">
       </div>
+
     </div>
   </div>
 </section>
 <!-- /HERO -->
-
-<!-- NOSOTROS -->
-<section class="section-spacing container">
-  <div class="row align-items-center">
-    <!-- Columna de imagen -->
-    <div class="col-lg-6 text-center mb-4 mb-lg-0">
-      <img src="imgs/nosotros.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
-    </div>
-    <!-- Columna de texto -->
-    <div class="col-lg-6">
-      <h2 class="h2-custom">NOSOTROS</h2>
-      <p class="lead-custom">Somos UvaClub, un espacio creado para los amantes del vino y de la buena música.</p>
-        <p class="lead-custom"> Su combinación genera una experiencia única para tu oído y tu paladar.</p>
-      <a href="#" class="btn btn-primary mt-3">CONOCE MÁS</a>
-    </div>
-  </div>
-</section>
-<!-- NOSOTROS -->
 
 <!-- QUE ES UVACLUB -->
 <section class="section-spacing container text-center">
@@ -107,18 +93,195 @@
 </section>
 <!-- /QUE ES UVACLUB -->
 
-<!-- FOTO CAJA -->
+
+<!-- NOSOTROS -->
+<section class="section-spacing container">
+  <div class="row align-items-center">
+    <!-- Columna de imagen -->
+    <div class="col-lg-6 text-center mb-4 mb-lg-0">
+      <img src="imgs/nosotros.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
+    </div>
+    <!-- Columna de texto -->
+    <div class="col-lg-6">
+      <h2 class="h2-custom">NOSOTROS</h2>
+      <p class="p-custom">Somos UvaClub, un espacio creado para los amantes del vino y de la buena música.</p>
+        <p class="p-custom"> Su combinación genera una experiencia única para tu oído y tu paladar.</p>
+      <a href="#" class="btn btn-primary mt-3">CONOCE MÁS</a>
+    </div>
+  </div>
+</section>
+<!-- NOSOTROS -->
+
+<!-- CAJAS -->
+<section class="section-spacing servicios-bg text-center">
+  <div class="container">
+    <h2 class="h2-custom">ELEGÍ TU PLAN</h2>
+    <!--<p class="mb-5">Lista de servicios o aspectos que se quieren destacar.</p> -->
+    <div class="row"> 
+      <!-- Columna 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 p-4" style="background-color: #ebe4da;">
+          <img src="imgs/caja-cool.png" class="mb-3" alt="Servicio">
+          <h3 class="h3-custom"><span style="color: 
+          #f54f48;">PLAN</span>  <span style="font-family: schibsted grotesk;">COOL</h3>
+          <h3>$25.000</h3>
+
+          <p class="p-custom">
+            <ul class="no-dots lista-plan">
+              <li>
+                2 Vinos Classic +
+              </li>
+              <li>
+                1 Maridaje Gourmet +
+              </li>
+              <li>
+                Disco de Vinilo
+              </li>
+              <li>
+                <span class="thick-strike1">Sacacorchos Coleccionable</span>
+              </li>
+              <li>
+                <span class="thick-strike1">Descuento en Vinotecas</span>
+              </li>
+              <li>
+                <span class="thick-strike1">ITEM SORPRESA</span>
+              </li>
+            </ul>
+          </p>
+
+          <a href="#" class="btn" style="color:#ebe4da;; background-color: #000000">VER MÁS</a>
+        </div>
+      </div>
+      <!-- Columna 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 p-4" style="background-color: #e9b44c;">
+          <img src="imgs/caja-groove.png" class="mb-3" alt="Servicio">
+          <h3 class="h3-custom"><span style="color: 
+          #f54f48;">PLAN</span> <span style="font-family: schibsted grotesk;">GROOVE</span></h3>
+          <h3>$50.000</h3>
+
+          <p class="p-custom">
+            <ul class="no-dots lista-plan">
+              <li>
+                2 Vinos Classic + 1 Vino Gourmet
+              </li>
+              <li>
+                3 Maridaje Gourmet +
+              </li>
+              <li>
+                Disco de Vinilo +
+              </li>
+              <li>
+                Sacacorchos Coleccionable
+              </li>
+              <li>
+                <span class="thick-strike2">Descuento en Vinotecas</span>
+              </li>
+              <li>
+                <span class="thick-strike2">ITEM SORPRESA</span>
+              </li>
+            </ul>
+          </p>
+
+          <a href="#" class="btn" style="color:#ebe4da;background-color: #b57d1a">VER MÁS</a>
+        </div>
+      </div>
+      <!-- Columna 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 p-4" style="background-color: #221e1d; color: #ebe4da;">
+          <img src="imgs/caja-master.png" class="mb-3" alt="Servicio">
+          <h3 class="h3-custom"><span style="color: 
+          #f54f48;">PLAN</span>  <span style="font-family: schibsted grotesk;">MASTER</h3>
+          <h3>$70.000</h3>
+
+          <p class="p-custom">
+            <ul class="no-dots lista-plan">
+              <li>
+                5 Vinos Gourmet +
+              </li>
+              <li>
+                5 Maridajes Gourmet +
+              </li>
+              <li>
+                Disco de Vinilo +
+              </li>
+              <li>
+                Sacacorchos Coleccionable +
+              </li>
+              <li>
+                Disco de Vinilo +
+              </li>
+              <li>
+                ITEM SORPRESA
+              </li>
+            </ul>
+          </p>
+
+          <a href="#" class="btn" style="background-color: #ebe4da">VER MÁS</a>
+        </div>
+      </div>
+      <!-- ... repetir estructura para más servicios ... -->
+    </div>
+  </div>
+</section>
+<!-- /CAJAS -->
+
+<!-- FOTO CAJA (eliminado) 
 <section>
 <div class="hero-image">
   <img src="imgs/montaje-chica-con-caja.png" alt="Descripción de la imagen">
 </div>
 </section>
-<!-- FOTO CAJA -->
+FOTO CAJA -->
 
-<!-- LISTA -->
+<!-- MUCHO MAS QUE VINO -->
+<section class="section-spacing container text-center">
+<div class="container">
+  <h2 class="h2-custom">MUCHO MAS QUE VINO</h2>
+  <br><br><br>
+  <!-- First row: 4 items -->
+  <div class="row justify-content-center mb-4">
+    <div class="col-6 col-md-3 mb-4">
+      <img src="imgs/list-icon-01.png" alt="Icono 1" style="width: 100px; margin-bottom: 15px;">
+      <p>Vinos seleccionados por sommeliers</p>
+    </div>
+    <div class="col-6 col-md-3 mb-4">
+      <img src="imgs/list-icon-02.png" alt="Icono 2" style="width: 100px; margin-bottom: 15px;">
+      <p>Música para acompañar</p>
+    </div>
+    <div class="col-6 col-md-3 mb-4">
+      <img src="imgs/list-icon-03.png" alt="Icono 3" style="width: 100px; margin-bottom: 15px;">
+      <p>Maridajes sugeridos</p>
+    </div>
+    <div class="col-6 col-md-3 mb-4">
+      <img src="imgs/list-icon-04.png" alt="Icono 4" style="width: 100px; margin-bottom: 15px;">
+      <p>Ficha sensorial para cada vino</p>
+    </div>
+  </div>
+
+  <!-- Second row: 3 items -->
+  <div class="row justify-content-center">
+    <div class="col-6 col-md-4 mb-4">
+      <img src="imgs/list-icon-05.png" alt="Icono 5" style="width: 100px; margin-bottom: 15px;">
+      <p>10% de dto. en vinotecas asociadas</p>
+    </div>
+    <div class="col-6 col-md-4 mb-4">
+      <img src="imgs/list-icon-06.png" alt="Icono 6" style="width: 100px; margin-bottom: 15px;">
+      <p>Acceso al Programa WineSwap</p>
+    </div>
+    <div class="col-6 col-md-4 mb-4">
+      <img src="imgs/list-icon-07.png" alt="Icono 7" style="width: 100px; margin-bottom: 15px;">
+      <p>Sorpresas en cada tirada</p>
+    </div>
+  </div>
+</div>
+</section>
+<!-- MUCHO MAS QUE VINO -->
+
+<!-- MUCHO MAS QUE VINO (eliminado)
 <section class="section-spacing container">
   <div class="row align-items-center">
-    <!-- Columna de lista (izquierda) -->
+    <!-- Columna de lista (izquierda) 
     <div class="col-lg-6">
       <h2 class="h2-custom">MUCHO MAS QUE VINO</h2>
       <ul class="list-group">
@@ -153,114 +316,14 @@
       </ul>
     </div>
 
-    <!-- Columna de imagen (derecha) -->
+    <!-- Columna de imagen (derecha) 
     <div class="col-lg-6 text-center mt-4 mt-lg-0">
       <img src="imgs/list-foto.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
     </div>
   </div>
 </section>
-<!-- LISTA -->
+MUCHO MAS QUE VINO --> 
 
-<!-- CAJAS -->
-<section class="section-spacing servicios-bg text-center">
-  <div class="container">
-    <h2 class="h2-custom">ELEGÍ TU PLAN</h2>
-    <!--<p class="mb-5">Lista de servicios o aspectos que se quieren destacar.</p> -->
-    <div class="row"> 
-      <!-- Cada columna es una tarjeta de servicio -->
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 p-4" style="background-color: ebe4da;">
-          <img src="imgs/caja-cool.png" class="mb-3" alt="Servicio">
-          <h5>PLAN COOL</h5>
-          <p class="p-custom">
-            <ul class="no-dots">
-              <li>
-                2 VINOS CLASSIC +
-              </li>
-              <li>
-                1 MARIDAJE GOURMET +
-              </li>
-              <li>
-                DISCO DE VINILO
-              </li>
-              <li>
-                <span class="thick-strike">SACACORCHOS COLECCIONABLE</span>
-              </li>
-              <li>
-                <span class="thick-strike">DESCUENTO EN VINOTECAS</span>
-              </li>
-              <li>
-                <span class="thick-strike">ITEM SORPRESA</span>
-              </li>
-            </ul>
-          </p>
-        </div>
-      </div>
-      <!-- Cada columna es una tarjeta de servicio -->
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 p-4"
-        style="background-color: #e9b44c;">
-          <img src="imgs/caja-groove.png" class="mb-3" alt="Servicio">
-          <h5>PLAN GROOVE</h5>
-          <p class="p-custom">
-            <ul class="no-dots">
-              <li>
-                2 VINOS CLASSIC +
-              </li>
-              <li>
-                1 MARIDAJE GOURMET +
-              </li>
-              <li>
-                DISCO DE VINILO
-              </li>
-              <li>
-                SACACORCHOS COLECCIONABLE
-              </li>
-              <li>
-                <span class="thick-strike">DISCO DE VINILO</span>
-              </li>
-              <li>
-                <span class="thick-strike">ITEM SORPRESA</span>
-              </li>
-            </ul>
-          </p>
-        </div>
-      </div>
-      <!-- Cada columna es una tarjeta de servicio -->
-      <div class="col-md-4 mb-4">
-        <div class="card h-100 p-4"
-              style="background-color: #221e1d; color: #ebe4da;">
-          <img src="imgs/caja-master.png" class="mb-3" alt="Servicio">
-          <h5>PLAN MASTER</h5>
-          <p class="p-custom">
-            <ul class="no-dots">
-              <li>
-                2 VINOS CLASSIC +
-              </li>
-              <li>
-                1 MARIDAJE GOURMET +
-              </li>
-              <li>
-                DISCO DE VINILO
-              </li>
-              <li>
-                SACACORCHOS COLECCIONABLE
-              </li>
-              <li>
-                DISCO DE VINILO
-              </li>
-              <li>
-                ITEM SORPRESA
-              </li>
-            </ul>
-          </p>
-        </div>
-      </div>
-      <!-- ... repetir estructura para más servicios ... -->
-    </div>
-  </div>
-</section>
-<!-- /CAJAS -->
 
 <!-- SECCIÓN A: Texto centrado sin imagen -->
 <section class="section-spacing container text-center">
