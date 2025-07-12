@@ -4,7 +4,7 @@
   --secondary-color: #6c757d;
   --light-color: #f8f9fa;
   --dark-color: #343a40;
-  --font-family-base: 'Roboto'
+  --font-family-base: 'Roboto';
 }
 
 /* 2. ESTILOS GENERALES */
@@ -20,76 +20,94 @@ body {
 
 /* 3. NAVBAR */
 .navbar {
-  background-color: #e8d1af;
+  background-color: #ffffff;
   transition: background-color 0.3s, box-shadow 0.3s;
   padding: 15px 0;
 }
 
 .navbar.scrolled {
-  background-color: #fff;
+  background-color: #e8d1af;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .navbar-brand {
   font-weight: 600;
   font-size: 1.7rem;
-  color: var(#695454);
+  color: #f54f48;
 }
 
 .nav-link {
   color: var(--dark-color);
+  font-size: 1.2rem;
   font-weight: 500;
-  margin-left: 20px;
-  transition: color 0.3s;
+  margin-left: 50px;
+  padding-top: 8px;
+  position: relative;
+  overflow: hidden;
 }
 
 .nav-link:hover {
-  color: #ffffff;
-  background-image: url(imgs/nav_var_hover.png);
-  background-size:contain; background-repeat: no-repeat;
+  color: #e8d1af;
+  background-image: url('imgs/nav_var_hover.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 
 /* 4. HERO */
 
 .hero-section {
   background-image: url('imgs/fondo_hero.png');
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   background-repeat: no-repeat;
+  min-height: 90vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-bottom: 0;
   padding-top: 50px;
-  padding-bottom: 50px;
+}
+
+.hero-img-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden; /* Mantenemos overflow: hidden aquí para el contenedor */
 }
 
 .hero-img {
   width: 100%;
-  max-width: 784px;
-  height: auto;
-  object-fit: contain;
+  height: 100%;
+  object-fit: contain; /* CAMBIO CLAVE: de 'cover' a 'contain' */
   display: block;
-  margin: 0 auto;
 }
 
-.row.p-5 {
-  min-height: 90vh;
-  display: flex;
+/* Ajustes para el texto */
+.hero-section .container .row {
+  height: 100%;
   align-items: center;
-  padding-top: 100px;
 }
 
-h1, h2, h3, h4, h5 {
-  font-weight: 600;
-  line-height: 1.2;
+.hero-section .col-12.col-lg-6.text-center.text-lg-start {
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-align: left;
 }
 
-h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  color: var(--dark-color);
-}
-
-p {
-  font-size: 1rem;
-  color: #6c757d;
+/* --- REGLA PARA EL BOTÓN --- */
+.hero-section .btn {
+  width: auto;
+  max-width: fit-content;
+  align-self: flex-start;
 }
 
 /* Botones */
@@ -98,6 +116,19 @@ p {
   padding: 10px 30px;
   font-weight: 600;
   transition: all 0.3s ease-in-out;
+}
+
+.btn-red{
+  background-color: #f04d44;
+  color: #ebe4da;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-weight: 600;
+}
+
+.btn-red:hover {
+  background-color: #000000; 
+  color: #ebe4da; 
 }
 
 .btn-dark {
@@ -157,8 +188,10 @@ section h2 {
 }
 
 .accordion-button {
+  border-radius: 10px !important;
   background-color: #e9b44c; /* Un beige suave, por ejemplo */
   color: #000000;
+    
 }
 
 .accordion-button:not(.collapsed) {
@@ -166,10 +199,27 @@ section h2 {
   color: #c70b0b;
 }
 
+.accordion-item {
+  border-radius: 16px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  background-color: transparent
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.faq-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 /* 6. CARDS */
 .card {
   border: none;
-  border-radius: 60px;
+  border-radius: 500px 500px 60px 60px;
+  
   overflow: hidden;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s;
@@ -241,9 +291,75 @@ section h2 {
 
 /* 7. TESTIMONIOS */
 .blockquote {
-  background-color: #ffffff;
+  background-color: #ffffff; /* Fondo blanco */
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 60px;
+}
+
+.blockquote-footer1{
+  background-color: #ebe4da;
+  border-style: solid;
+  border-color: #ebe4da;
+  border-radius: 100px;;
+}
+
+.blockquote-footer2{
+  background-color: #e9b44c;
+  border-style: solid;
+  border-color: #e9b44c;
+  border-radius: 100px;;
+}
+
+.blockquote-footer3{
+  color: #ebe4da;
+  background-color: #221e1d;
+  border-style: solid;
+  border-color: #221e1d;
+  border-radius: 100px;;
+}
+
+/* Sección de Testimonios */
+#testimonials .blockquote {
+  border-radius: 15px; 
+  border-top: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease;
+  margin-bottom: 20px;
+}
+
+/* Efecto hover para las tarjetas de testimonios */
+#testimonials .blockquote:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); 
+}
+
+/* Colores de borde izquierdo para cada testimonio */
+/* Primer testimonio */
+#testimonials .row .col-md-4:nth-child(1) .blockquote {
+  border-left: 8px solid #cacaca; /* Rojo */
+}
+
+/* Segundo testimonio */
+#testimonials .row .col-md-4:nth-child(2) .blockquote {
+  border-left: 8px solid #e9b44c; /* Amarillo/Naranja */
+}
+
+/* Tercer testimonio */
+#testimonials .row .col-md-4:nth-child(3) .blockquote {
+  border-left: 8px solid #221e1d; /* Gris oscuro */
+}
+
+@media (max-width: 767.98px) {
+  #testimonials .col-12.col-md-4:not(:last-child) {
+    margin-bottom: 20px; /* Espacio entre columnas cuando se apilan */
+  }
 }
 
 /* 8. FORMULARIO */
@@ -260,9 +376,33 @@ form button.btn-primary {
   margin-top: 20px;
 }
 
+/* Estilos por defecto para la sección FAQ (para pantallas pequeñas, mobile-first) */
+.faq-bg {
+  background-image: url('imgs/bg-sm.png'); /* Imagen para móviles y pantallas pequeñas */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px; /* Asegura una altura mínima para que el fondo sea visible. Ajusta si es necesario. */
+}
+
+/* Media Query para pantallas medianas (ej. 768px y más, que es el breakpoint 'md' de Bootstrap) */
+@media (min-width: 768px) {
+  .faq-bg {
+    background-image: url('imgs/bg-md.png'); /* Cambia a la imagen para pantallas medianas */
+  }
+}
+
+/* Media Query para pantallas grandes (ej. 992px y más, que es el breakpoint 'lg' de Bootstrap) */
+@media (min-width: 992px) {
+  .faq-bg {
+    background-image: url('imgs/bg-lg.png'); /* Cambia a la imagen para pantallas grandes */
+  }
+}
+
+
 /* 9. FOOTER */
 footer {
-  background-color: var(--dark-color);
+  background-color: #f54f48;
   color: #ffffff;
   font-size: 0.9rem;
 }
@@ -302,7 +442,7 @@ img.rounded-circle {
   font-size: 3rem;
   font-weight: bold;
   line-height: 1.3;
-  color: var(#ebe4da);
+  color: #221e1d;
 }
 
 .h3-custom {
@@ -319,8 +459,8 @@ img.rounded-circle {
 
 /* PÁRRAFOS Y TEXTOS */
 .p-custom {
-  font-size: 1.5rem;
-  color: var(#221e1d);
+  font-size: 1rem;
+  color: #221e1d;
   line-height: 1.6;
 }
 
@@ -382,6 +522,92 @@ img.rounded-circle {
 /* ============================== */
 /* MEDIA QUERIES */
 /* ============================== */
+
+/* Media query para dispositivos más pequeños (mobile) */
+@media (max-width: 991.98px) {
+  .hero-section {
+    position: relative;
+    min-height: auto;
+    padding-bottom: 0;
+    align-items: flex-start;
+  }
+
+  .hero-section .col-12.col-lg-6.text-center.px-4.py-5 {
+    order: -1;
+    margin-bottom: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .hero-img-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    right: auto;
+    bottom: auto;
+  }
+
+  .hero-img {
+    height: auto;
+    object-fit: contain; /* Se mantiene 'contain' para móviles */
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .hero-section .container .row {
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .hero-section .col-12.col-lg-6.text-center.text-lg-start {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  .hero-section .col-12.col-lg-6.text-center.text-lg-start .btn {
+      align-self: center;
+  }
+}
+
+/* --- MEDIA QUERY PARA PANTALLAS MEDIANAS ESPECÍFICAMENTE --- */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .hero-section .col-12.col-lg-6.text-center.px-4.py-5 {
+    order: initial;
+  }
+
+  .hero-img-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+  }
+
+  .hero-img {
+    object-fit: contain; /* Se mantiene 'contain' para tablets */
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .hero-section .col-12.col-lg-6.text-center.text-lg-start {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .hero-section .col-12.col-lg-6.text-center.text-lg-start .btn {
+    align-self: center;
+  }
+}
+
 @media (max-width: 768px) {
   .servicios-bg {
     min-height: auto;

@@ -19,8 +19,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <!-- Estilos personalizados -->
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
 
@@ -48,19 +50,17 @@
 
 <!-- HERO: Sección de portada con llamado a la acción -->
 <section class="hero-section">
-  <div class="container">
-    <div class="row align-items-center flex-column-reverse flex-lg-row">
+  <div class="container h-100">
+    <div class="row align-items-end flex-column-reverse flex-lg-row h-100">
       
-      <!-- Texto -->
       <div class="col-12 col-lg-6 text-center text-lg-start px-4 py-5">
         <h1 class="h1-custom">UN VINO QUE SUENA A VOS</h1>
-        <p class="p-custom">Cada mes, vinos seleccionados con propósito, directo a tu puerta.</p>
-        <a href="#" class="btn btn-dark mt-3">VER MÁS</a>
+        <p class="h4-custom">Cada mes, vinos seleccionados con propósito, directo a tu puerta.</p>
+        <a href="#" class="btn btn-red mt-3">VER MÁS</a>
       </div>
 
-      <!-- Imagen -->
-      <div class="col-12 col-lg-6 text-center px-4 py-5">
-        <img src="imgs/foto-hero-32.png" alt="Imagen Hero" class="hero-img">
+      <div class="hero-img-container">
+        <img src="imgs/hero-img.png" alt="Imagen Hero" class="hero-img">
       </div>
 
     </div>
@@ -74,17 +74,17 @@
    <!-- <p class="mt-3 mb-5">Contá quién sos, qué hacés y por qué debería interesarle al visitante.</p> -->
   <div class="row">
     <!-- Tres columnas informativas -->
-    <div class="col-md-4">
+    <div class="col-md-4" style="padding-left: 50px; padding-right: 50px;">
       <img src="imgs/icon-01.png" alt="Elegís tu plan" style="width: 150px; height: auto; margin-bottom: 15px;">
       <h4 class="h4-custom">Elegis tu plan</h4>
       <p class="p-custom">Descubri cuál va con vos y activalo en segundos.</p>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4" style="padding-left: 50px; padding-right: 50px;">
       <img src="imgs/icon-02.png" alt="Elegís tu plan" style="width: 150px; height: auto; margin-bottom: 15px;">
       <h4 class="h4-custom">Recibis tu caja</h4>
       <p class="p-custom"> Cada mes, directo a tu puerta, sin complicaciones.</p>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4" style="padding-left: 50px; padding-right: 50px;">
       <img src="imgs/icon-03.png" alt="Elegís tu plan" style="width: 150px; height: auto; margin-bottom: 15px;">
       <h4 class="h4-custom">Y disfrutas...</h4>
       <p class="p-custom">Vino, música y sorpresas pensadas para vos.</p>
@@ -106,7 +106,7 @@
       <h2 class="h2-custom">NOSOTROS</h2>
       <p class="p-custom">Somos UvaClub, un espacio creado para los amantes del vino y de la buena música.</p>
         <p class="p-custom"> Su combinación genera una experiencia única para tu oído y tu paladar.</p>
-      <a href="#" class="btn btn-primary mt-3">CONOCE MÁS</a>
+      <a href="#" class="btn btn-red mt-3">CONOCE MÁS</a>
     </div>
   </div>
 </section>
@@ -226,176 +226,149 @@
 </section>
 <!-- /CAJAS -->
 
-<!-- FOTO CAJA (eliminado) 
-<section>
-<div class="hero-image">
-  <img src="imgs/montaje-chica-con-caja.png" alt="Descripción de la imagen">
-</div>
-</section>
-FOTO CAJA -->
-
-<!-- MUCHO MAS QUE VINO -->
+<!-- POR QUE -->
 <section class="section-spacing container text-center">
-<div class="container">
-  <h2 class="h2-custom">MUCHO MAS QUE VINO</h2>
-  <br><br><br>
-  <!-- First row: 4 items -->
-  <div class="row justify-content-center mb-4">
-    <div class="col-6 col-md-3 mb-4">
-      <img src="imgs/list-icon-01.png" alt="Icono 1" style="width: 100px; margin-bottom: 15px;">
-      <p>Vinos seleccionados por sommeliers</p>
+  <h2 class="h2-custom">¿QUÉ ES UVACLUB?</h2>
+   <!-- <p class="mt-3 mb-5">Contá quién sos, qué hacés y por qué debería interesarle al visitante.</p> -->
+  <div class="row">
+    <!-- Cuatro columnas informativas -->
+    <div class="col-md-3" style="padding-left: 35px; padding-right: 35px;">
+      <img src="imgs/porque-foto-01.png" alt="Elegís tu plan" style="width: 150px; height: auto; margin-bottom: 15px;">
+      <h4 class="h4-custom">Vino que vale la pena</h4>
+      <p class="p-custom">Selección curada por sommeliers para sorprenderte.</p>
     </div>
-    <div class="col-6 col-md-3 mb-4">
-      <img src="imgs/list-icon-02.png" alt="Icono 2" style="width: 100px; margin-bottom: 15px;">
-      <p>Música para acompañar</p>
+    <div class="col-md-3" style="padding-left: 35px; padding-right: 35px;">
+      <img src="imgs/porque-foto-02.png" alt="Elegís tu plan" style="width: 150px; height: auto; margin-bottom: 15px;">
+      <h4 class="h4-custom">Maridaje que sorprende</h4>
+      <p class="p-custom"> Sabores pensados para potenciar lo mejor del vino.</p>
     </div>
-    <div class="col-6 col-md-3 mb-4">
-      <img src="imgs/list-icon-03.png" alt="Icono 3" style="width: 100px; margin-bottom: 15px;">
-      <p>Maridajes sugeridos</p>
+    <div class="col-md-3" style="padding-left: 35px; padding-right: 35px;">
+      <img src="imgs/porque-foto-03.png" alt="Elegís tu plan" style="width: 150px; height: auto; margin-bottom: 15px;">
+      <h4 class="h4-custom">Música que acompaña</h4>
+      <p class="p-custom">Disco exclusivo para conectar con el mood de cada caja.</p>
     </div>
-    <div class="col-6 col-md-3 mb-4">
-      <img src="imgs/list-icon-04.png" alt="Icono 4" style="width: 100px; margin-bottom: 15px;">
-      <p>Ficha sensorial para cada vino</p>
-    </div>
-  </div>
-
-  <!-- Second row: 3 items -->
-  <div class="row justify-content-center">
-    <div class="col-6 col-md-4 mb-4">
-      <img src="imgs/list-icon-05.png" alt="Icono 5" style="width: 100px; margin-bottom: 15px;">
-      <p>10% de dto. en vinotecas asociadas</p>
-    </div>
-    <div class="col-6 col-md-4 mb-4">
-      <img src="imgs/list-icon-06.png" alt="Icono 6" style="width: 100px; margin-bottom: 15px;">
-      <p>Acceso al Programa WineSwap</p>
-    </div>
-    <div class="col-6 col-md-4 mb-4">
-      <img src="imgs/list-icon-07.png" alt="Icono 7" style="width: 100px; margin-bottom: 15px;">
-      <p>Sorpresas en cada tirada</p>
+    <div class="col-md-3" style="padding-left: 35px; padding-right: 35px;">
+      <img src="imgs/porque-foto-04.png" alt="Elegís tu plan" style="width: 150px; height: auto; margin-bottom: 15px;">
+      <h4 class="h4-custom">Todo sin moverte</h4>
+      <p class="p-custom">Elegí tu plan y nosotros nos encargamos del resto.
+</p>
     </div>
   </div>
-</div>
 </section>
-<!-- MUCHO MAS QUE VINO -->
+<!-- /POR QUE -->
 
 <!-- FAQs -->
-<section class="section-spacing container">
-<h2 class="h2-custom text-center">FAQs</h2>
-<div class="accordion accordion-flush" id="accordionFlushExample">
+ <div class="faq-bg">
+<section class="section-spacing container text-center">
+  <h2 class="h2-custom mb-5">PREGUNTAS FRECUENTES</h2>
+  <div class="faq-wrapper mx-auto">
+    <div class="accordion accordion-flush" id="accordionFlushExample">
 
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-        ¿Cuándo recibo mi caja?
-      </button>
-    </h2>
-    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Las cajas se envían durante la primera semana de cada mes. Te avisamos por mail cuando esté en camino.</div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">
+            ¿Cuándo recibo mi caja?
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Las cajas se envían durante la primera semana de cada mes. Te avisamos por mail cuando esté en camino.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+            ¿Puedo elegir los vinos?
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">No, la selección es sorpresa y está curada por sommeliers. Pero podés contarnos tus preferencias al suscribirte y las tenemos en cuenta.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree">
+            ¿Puedo regalar una suscripción?
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">¡Sí! Podés elegir regalar una sola caja o una suscripción por 3, 6 o 12 meses. Lo armás fácil desde nuestra web.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour">
+            ¿Puedo pausar o cancelar la suscripción?
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Sí. Desde tu cuenta podés pausarla o cancelarla cuando quieras, sin costo adicional.</div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive">
+            ¿Hacen envíos a todo el país?
+          </button>
+        </h2>
+        <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Sí, enviamos a todas las provincias de Argentina.</div>
+        </div>
+      </div>
+
     </div>
   </div>
-
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-        ¿Puedo elegir los vinos?
-      </button>
-    </h2>
-    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">No, la selección es sorpresa y está curada por sommeliers. Pero podés contarnos tus preferencias al suscribirte y las tenemos en cuenta.</div>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-        ¿Puedo regalar una suscripción?
-      </button>
-    </h2>
-    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">¡Sí! Podés elegir regalar una sola caja o una suscripción por 3, 6 o 12 meses. Lo armás fácil desde nuestra web.</div>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-        ¿Puedo pausar o cancelar la suscripción?
-      </button>
-    </h2>
-    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Sí. Desde tu cuenta podés pausarla o cancelarla cuando quieras, sin costo adicional.</div>
-    </div>
-
-  
-
-  </div>
-
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-        ¿Hacen envíos a todo el país?
-      </button>
-    </h2>
-    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Sí, enviamos a todas las provincias de Argentina.</div>
-    </div>
-
-  </div>
-
 </section>
+</div>
 <!-- FAQs -->
 
 <!-- TESTIMONIALS: Opiniones de clientes -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">FORMÁ PARTE DE NUESTRA COMUNIDAD</h2>
-  <p class="p-custom">Mirá lo que opinan nuestros usuarios</p>
-  <div class="row">
-
-    <!-- Cada columna es un testimonio -->
-    <div class="col-md-4">
-      <blockquote class="blockquote p-4 text-center" style="border-left: 4px solid; color: #b57d1a;">
-        <div style="width: 100px; height: 100px; overflow: hidden; border-radius: 16px; margin: 0 auto; ">
-          <img src="imgs/selfie.jpg" alt="Foto del cliente" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-
-         <h5 class="testimonial-title mt-3" style="color: #e74c3c;">PLAN COOL</h5>
-
-        <p class="mt-3 mb-0">Perfecto para relajar después del laburo. Descubrí vinos sin complicaciones!!</p>
-        <footer class="blockquote-footer mt-3">Cliente 1
-        </footer>
-      </blockquote>
+<section id="testimonials" class="py-5">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-12 text-center mb-5">
+        <h2 class="h2-custom">FORMÁ PARTE DE NUESTRA COMUNIDAD</h2>
+      </div>
     </div>
-    
-    <!-- Cada columna es un testimonio -->
-    <div class="col-md-4">
-      <blockquote class="blockquote p-4 text-center">
-        <div style="width: 100px; height: 100px; overflow: hidden; border-radius: 16px; margin: 0 auto;">
-          <img src="imgs/selfie-2.jpg" alt="Foto del cliente" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
+    <div class="row text-center justify-content-center">
 
-        <h5 class="testimonial-title mt-3" style="color: #e74c3c;">PLAN GROOVE</h5>
+      <div class="col-12 col-md-4 mb-4">
+        <blockquote class="blockquote p-4">
+          <div style="width: 100px; height: 100px; overflow: hidden; border-radius: 16px; margin: 0 auto;">
+            <img src="imgs/selfie.jpg" alt="Foto del cliente" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <h5 class="testimonial-title mt-3" style="color: #221e1d;">@florencia.sol</h5>
+          <p class="mt-3 mb-0">Perfecto para relajar después del laburo. Descubrí vinos sin complicaciones!!</p>
+          <p class="blockquote-footer1 mt-3" style="color: #221e1d">Plan Cool</p>
+        </blockquote>
+      </div>
 
-        <p class="mt-3 mb-0">Nunca pensé que una copa de vino y un buen disco pudieran cambiarme tanto la semana.</p>
-        <footer class="blockquote-footer mt-3">Cliente 1
-        </footer>
-      </blockquote>
+      <div class="col-12 col-md-4 mb-4">
+        <blockquote class="blockquote p-4">
+          <div style="width: 100px; height: 100px; overflow: hidden; border-radius: 16px; margin: 0 auto;">
+            <img src="imgs/selfie-2.jpg" alt="Foto del cliente" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <h5 class="testimonial-title mt-3" style="color: #221e1d;">@lea_paredes</h5>
+          <p class="mt-3 mb-0">Nunca pensé que una copa de vino y un buen disco pudieran cambiarme tanto la semana.</p>
+          <p class="blockquote-footer2 mt-3">Plan Groove</p>
+        </blockquote>
+      </div>
+
+      <div class="col-12 col-md-4 mb-4">
+        <blockquote class="blockquote p-4">
+          <div style="width: 100px; height: 100px; overflow: hidden; border-radius: 16px; margin: 0 auto;">
+            <img src="imgs/selfie-3.jpg" alt="Foto del cliente" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <h5 class="testimonial-title mt-3" style="color: #221e1d;">@vinotek</h5>
+          <p class="mt-3 mb-0">Cada caja es una joya. El vino, el maridaje, la música… todo curado con un nivel impresionante.</p>
+          <p class="blockquote-footer3 mt-3">Plan Master</p>
+        </blockquote>
+      </div>
+
     </div>
-    
-    <!-- Cada columna es un testimonio -->
-    <div class="col-md-4">
-      <blockquote class="blockquote p-4 text-center">
-        <div style="width: 100px; height: 100px; overflow: hidden; border-radius: 16px; margin: 0 auto;">
-          <img src="imgs/selfie-3.jpg" alt="Foto del cliente" style="width: 100%; height: 100%; object-fit: cover;">
-        </div>
-
-        <h5 class="testimonial-title mt-3" style="color: #e74c3c;">PLAN MASTER</h5>
-
-        <p class="mt-3 mb-0">Cada caja es una joya. El vino, el maridaje, la música… todo curado con un nivel impresionante.</p>
-        <footer class="blockquote-footer mt-3">Cliente 1
-        </footer>
-      </blockquote>
-    </div>
-
   </div>
 </section>
 <!-- /TESTIMONIALS -->
@@ -423,5 +396,40 @@ window.addEventListener('scroll', function() {
 
 <!-- Scripts adicionales -->
 <script src="scripts.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js">
+	</script> 
+	<script>
+	       $('.team-slider').owlCarousel({
+	           loop: true,            
+	           nav: false,
+	           autoplay: true,
+	           autoplayTimeout: 5000,
+	           smartSpeed: 450,
+	           margin: 20,
+	           responsive: {
+	               0: {
+	                   items: 1
+	               },
+	               768: {
+	                   items: 2
+	               },
+	               991: {
+	                   items: 3
+	               },
+	               1200: {
+	                   items: 3
+	               },
+	               1920: {
+	                   items: 3
+	               }
+	           }
+	       });
+	</script>
+
 </body>
 </html>
