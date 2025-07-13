@@ -71,6 +71,19 @@ body {
   padding-top: 50px;
 }
 
+.hero-section-detalle {
+  background-color: #221e1d;
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-bottom: 0;
+  padding-top: 50px;
+}
+
 .hero-img-container {
   position: absolute;
   bottom: 0;
@@ -169,15 +182,15 @@ section h2 {
   height: auto;
   display: block;
   object-fit: cover;
-  aspect-ratio: 1920 / 800; /* modern CSS to enforce aspect ratio */
+  aspect-ratio: 1920 / 800;
 }
 
 .servicios-bg {
-  background-image: url(imgs/fondo-planes.png); /* tu imagen */
+  background-image: url(imgs/fondo-planes.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 867px;  /* 👈 antes era 1300px */
+  min-height: 867px;
   width: 100%;
   color: white;
 }
@@ -189,13 +202,13 @@ section h2 {
 
 .accordion-button {
   border-radius: 10px !important;
-  background-color: #e9b44c; /* Un beige suave, por ejemplo */
+  background-color: #e9b44c;
   color: #000000;
     
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: #f8dfac; /* Color cuando está abierto */
+  background-color: #f8dfac;
   color: #c70b0b;
 }
 
@@ -262,7 +275,7 @@ section h2 {
   left: 0;
   right: 0;
   top: 45%;
-  height: 13px; /* Change this value to adjust thickness */
+  height: 13px;
   background: black;
   transform: translateY(-50%);
 }
@@ -278,44 +291,66 @@ section h2 {
   left: 0;
   right: 0;
   top: 48%;
-  height: 13px; /* Change this value to adjust thickness */
+  height: 13px;
   background:#b57d1a;
   transform: translateY(-50%);
 }
 
 .no-dots {
   list-style: none;
-  padding-left: 0; /* Optional: removes left indent */
+  padding-left: 0;
   text-align: left;
 }
 
 /* 7. TESTIMONIOS */
 .blockquote {
-  background-color: #ffffff; /* Fondo blanco */
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 60px;
 }
 
-.blockquote-footer1{
-  background-color: #ebe4da;
-  border-style: solid;
-  border-color: #ebe4da;
-  border-radius: 100px;;
+.testimonial-title {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.25rem !important;
 }
 
-.blockquote-footer2{
+.bq-p {
+  font-size: 1rem;
+  margin-top: 0.5rem !important;
+  margin-bottom: 0 !important;
+}
+
+.blockquote-footer1,
+.blockquote-footer2,
+.blockquote-footer3 {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: solid 1px;
+  border-radius: 100px;
+  padding: 2px 10px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #221e1d;
+  white-space: nowrap;
+}
+
+/* Colores personalizados para cada plan */
+.blockquote-footer1 {
+  background-color: #cacaca;
+  border-color: #cacaca;
+}
+
+.blockquote-footer2 {
   background-color: #e9b44c;
-  border-style: solid;
   border-color: #e9b44c;
-  border-radius: 100px;;
 }
 
-.blockquote-footer3{
-  color: #ebe4da;
+.blockquote-footer3 {
   background-color: #221e1d;
-  border-style: solid;
   border-color: #221e1d;
-  border-radius: 100px;;
+  color: #ebe4da;
 }
 
 /* Sección de Testimonios */
@@ -343,17 +378,21 @@ section h2 {
 /* Colores de borde izquierdo para cada testimonio */
 /* Primer testimonio */
 #testimonials .row .col-md-4:nth-child(1) .blockquote {
-  border-left: 8px solid #cacaca; /* Rojo */
+  border-left: 8px solid #cacaca;
 }
 
 /* Segundo testimonio */
 #testimonials .row .col-md-4:nth-child(2) .blockquote {
-  border-left: 8px solid #e9b44c; /* Amarillo/Naranja */
+  border-left: 8px solid #e9b44c;
 }
 
 /* Tercer testimonio */
 #testimonials .row .col-md-4:nth-child(3) .blockquote {
-  border-left: 8px solid #221e1d; /* Gris oscuro */
+  border-left: 8px solid #221e1d;
+}
+
+.testimonials-single-color .row .col-md-4 .blockquote {
+  border-left: 8px solid #221e1d !important; /* Unifica el color del borde a este color oscuro */
 }
 
 @media (max-width: 767.98px) {
@@ -399,11 +438,10 @@ form button.btn-primary {
   }
 }
 
-
 /* 9. FOOTER */
 footer {
   background-color: #f54f48;
-  color: #ffffff;
+  color: #ffeaea;
   font-size: 0.9rem;
 }
 
@@ -419,6 +457,29 @@ img.rounded-circle {
 
 .container .row img:hover {
   transform: scale(1.05);
+}
+
+/* 12. QUE CONTIENE */
+.que-trae-la-caja-bg {
+  background-image: url('imgs/bg-sm-2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 500px; /
+}
+
+/* Media Query for medium screens */
+@media (min-width: 768px) {
+  .que-trae-la-caja-bg {
+    background-image: url('imgs/bg-md-2.png');
+  }
+}
+
+/* Media Query for large screens */
+@media (min-width: 992px) {
+  .que-trae-la-caja-bg {
+    background-image: url('imgs/bg-lg-2.png');
+  }
 }
 
 /* ============================== */
@@ -454,7 +515,13 @@ img.rounded-circle {
 .h4-custom {
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--dark-color);
+  color: #221e1d;
+}
+
+.h5-custom {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #221e1d;
 }
 
 /* PÁRRAFOS Y TEXTOS */
@@ -467,7 +534,7 @@ img.rounded-circle {
 .lead-custom {
   font-size: 1.25rem;
   font-weight: 400;
-  color: var(--secondary-color);
+  color: #221e1d;;
 }
 
 /* FONDOS E IMÁGENES */

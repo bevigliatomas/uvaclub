@@ -1,104 +1,364 @@
 <!DOCTYPE html>
-<html lang="en">
-<!--divinectorweb.com-->
+<html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<title>Responsive Team Slider using Bootstrap & Owl Carousel 2</title>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
-	<link href="style.css" rel="stylesheet">
-</head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UvaClub</title>
+
+    <!-- Tipografía desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@900&display=swap" rel="stylesheet">
+
+    <!-- Framework CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>|
 <body>
-	<section id="team">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-					<div class="sec-heading text-center">
-						<h6>Team Members</h6>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="testimonial-box">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="team-slider owl-carousel">
-							<div class="single-box text-center">
-								<div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/65VQDfjs/1.png"></div>
-								<div class="info-area">
-									<h4>Person's Name</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p><a href="#">Learn More</a>
-								</div>
-							</div>
-							<div class="single-box text-center">
-								<div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/vmCM14qL/2.png"></div>
-								<div class="info-area">
-									<h4>Person's Name</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p><a href="#">Learn More</a>
-								</div>
-							</div>
-							<div class="single-box text-center">
-								<div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/TYTxWM9S/3.png"></div>
-								<div class="info-area">
-									<h4>Person's Name</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p><a href="#">Learn More</a>
-								</div>
-							</div>
-							<div class="single-box text-center">
-								<div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/593GTHB7/4.png"></div>
-								<div class="info-area">
-									<h4>Person's Name</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p><a href="#">Learn More</a>
-								</div>
-							</div>
-							<div class="single-box text-center">
-								<div class="img-area"><img alt="" class="img-fluid move-animation" src="https://i.postimg.cc/tJCrp53r/5.png"></div>
-								<div class="info-area">
-									<h4>Person's Name</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, ullam.</p><a href="#">Learn More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
-	</script> 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-	</script> 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js">
-	</script> 
-	<script>
-	       $('.team-slider').owlCarousel({
-	           loop: true,            
-	           nav: false,
-	           autoplay: true,
-	           autoplayTimeout: 5000,
-	           smartSpeed: 450,
-	           margin: 20,
-	           responsive: {
-	               0: {
-	                   items: 1
-	               },
-	               768: {
-	                   items: 2
-	               },
-	               991: {
-	                   items: 3
-	               },
-	               1200: {
-	                   items: 3
-	               },
-	               1920: {
-	                   items: 3
-	               }
-	           }
-	       });
-	</script>
+	
+<!-- NAVBAR: Menú de navegación fijo superior -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <!-- Logo o nombre del sitio -->
+    <a class="navbar-brand" href="#">UVACLUB</a>
+    <!-- Botón para mostrar menú en mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Ítems del menú -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="/uvaclub-main/index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="/uvaclub-main/index.html">Planes</a></li>
+        <li class="nav-item"><a class="nav-link" href="/uvaclub-main/index.html">Equipo</a></li>
+        <li class="nav-item"><a class="nav-link" href="/uvaclub-main/index.html">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /NAVBAR -->
+
+<!-- HERO -->
+<section class="hero-section-detalle">
+  <div class="container h-100">
+    <div class="row align-items-center h-100">
+      
+      <div class="col-12 col-lg-6 text-center text-lg-start px-4 py-5">
+        <img src="imgs/hero-detalle.png" alt="Imagen Hero" class="hero-img img-fluid">
+      </div>
+
+      <div class="col-12 col-lg-6 text-center text-lg-start px-4 py-5" >
+        <h1 class="h1-custom" style="color: #ebe4da">PLAN<br>MASTER</h1>
+        <p class="h4-custom" style="color: #ebe4da">Nuestro plan para conocedores.<br>La selección exclusiva de vinos que necesitabas, en la puerta de tu casa.</p>
+        <a href="/uvaclub-main/detalle.html" class="btn btn-red mt-3">COMPRAR</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /HERO -->
+
+<!-- QUE TRAE LA CAJA -->
+<section class="section-spacing text-center que-trae-la-caja-bg">
+  <div class="container">
+    <h2 class="h2-custom">¿QUÉ TRAE LA CAJA?</h2>
+
+    <div class="row">
+      <div class="col-6 col-md-3 px-4 mb-4"> <img src="imgs/items-01.png" alt="Elegís tu plan" class="img-fluid mb-3" style="max-width: 150px;">
+        <div class="d-flex justify-content-center align-items-center">
+          <h2 class="h2-custom mb-0 me-2">5</h2>
+          <h5 class="h5-custom mb-0 text-start">VINOS<br>GOURMET</h5>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 px-4 mb-4">
+        <img src="imgs/items-02.png" alt="Elegís tu plan" class="img-fluid mb-3" style="max-width: 150px;">
+        <div class="d-flex justify-content-center align-items-center">
+          <h2 class="h2-custom mb-0 me-2">5</h2>
+          <h5 class="h5-custom mb-0 text-start">MARIDAJES<br>GOURMET</h5>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 px-4 mb-4">
+        <img src="imgs/items-03.png" alt="Elegís tu plan" class="img-fluid mb-3" style="max-width: 150px;">
+        <div class="d-flex justify-content-center align-items-center">
+          <h2 class="h2-custom mb-0 me-2">1</h2>
+          <h5 class="h5-custom mb-0 text-start">DISCO DE<br>VINILO</h5>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 px-4 mb-4">
+        <img src="imgs/items-04.png" alt="Elegís tu plan" class="img-fluid mb-3" style="max-width: 150px;">
+        <div class="d-flex justify-content-center align-items-center">
+          <h2 class="h2-custom mb-0 me-2">1</h2>
+          <h5 class="h5-custom mb-0 text-start">SACACORCHOS<br>COLECCIONABLE</h5>
+        </div>
+      </div>
+    </div> <div class="row justify-content-center"> <div class="col-12 col-md-4 px-4"> <img src="imgs/items-05.png" alt="Item 5" class="img-fluid mb-3" style="max-width: 150px;">
+        <div class="d-flex justify-content-center align-items-center">
+          <h2 class="h2-custom mb-0 me-2">1</h2>
+          <h5 class="h5-custom mb-0 text-start">DESCUENTOS<br>MENSUALES</h5>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 px-4">
+        <img src="imgs/items-06.png" alt="Item 6" class="img-fluid mb-3" style="max-width: 150px;">
+        <div class="d-flex justify-content-center align-items-center">
+          <h2 class="h2-custom mb-0 me-2">1</h2>
+          <h5 class="h5-custom mb-0 text-start">GUIA <br>DE CATA</h5>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 px-4">
+        <img src="imgs/items-07.png" alt="Item 7" class="img-fluid mb-3" style="max-width: 150px;">
+        <div class="d-flex justify-content-center align-items-center">
+          <h2 class="h2-custom mb-0 me-2">1</h2>
+          <h5 class="h5-custom mb-0 text-start">ITEM<br>SORPRESA</h5>
+        </div>
+      </div>
+    </div> </div>
+</section>
+<!-- QUE TRAE LA CAJA -->
+
+<!-- COMPRAR -->
+<section class="hero-section-detalle">
+  <div class="container h-100">
+    <div class="row align-items-center flex-column-reverse flex-lg-row h-100">
+
+        <div class="col-12 col-lg-6 d-flex align-items-center text-start px-4 py-5">
+            <div>
+                <p class="display-5 h2-custom" style="color: #ebe4da">$64.999 <small>/ mes</small></p>
+                <a href="/uvaclub-main/detalle.html" class="btn btn-red mt-3 w-100">COMPRAR</a> 
+                <div class="d-flex justify-content-center justify-content-lg-start flex-wrap gap-3 mt-4">
+                    <img src="imgs/pago-01.png" alt="Icono 1" class="img-fluid" style="max-width: 100px;">
+                    <img src="imgs/pago-02.png" alt="Icono 2" class="img-fluid" style="max-width: 66px;">
+                    <img src="imgs/pago-03.png" alt="Icono 3" class="img-fluid" style="max-width: 66px;">
+                    <img src="imgs/pago-04.png" alt="Icono 4" class="img-fluid" style="max-width: 135px;">
+                </div>
+                <p class="lead-custom"></p>
+            </div>
+        </div>
+        <div class="col-lg-6 text-center">
+            <img src="imgs/caja-master-2.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
+        </div>
+    </div>
+  </div>
+</section>
+<!-- COMPRAR -->
+
+ <!-- GALERÍA: Grid clásico de 3 columnas -->
+<section class="section-spacing container py-5 text-center">
+  <h2 class="mb-4 h2-custom">MOMENTOS UVACLUB</h2>
+  <p class="mb-5 lead-custom">Nuestros suscriptores compartiendo lo que más importa: una copa, buena música y grandes momentos.</p>
+  <div class="row g-4">
+    <div class="col-md-4"><img src="imgs/galeria-1.png" class="img-fluid img-rounded rounded" alt="Imagen 1"></div>
+    <div class="col-md-4"><img src="imgs/galeria-2.png" class="img-fluid img-rounded rounded" alt="Imagen 2"></div>
+    <div class="col-md-4"><img src="imgs/galeria-3.png" class="img-fluid img-rounded rounded" alt="Imagen 3"></div>
+	<div class="col-md-4"><img src="imgs/galeria-4.png" class="img-fluid img-rounded rounded" alt="Imagen 1"></div>
+    <div class="col-md-4"><img src="imgs/galeria-5.png" class="img-fluid img-rounded rounded" alt="Imagen 2"></div>
+    <div class="col-md-4"><img src="imgs/galeria-6.png" class="img-fluid img-rounded rounded" alt="Imagen 3"></div>
+  </div>
+</section>
+<!-- GALERIA -->
+
+<!-- TESTIMONIALS: Opiniones de clientes -->
+<section id="testimonials" class="py-5 testimonials-single-color">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-12 text-center mb-5">
+        <h2 class="h2-custom">FORMÁ PARTE DE NUESTRA COMUNIDAD</h2>
+      </div>
+    </div>
+    <div class="row text-center justify-content-center">
+
+    <div class="col-12 col-md-4 mb-4">
+        <blockquote class="blockquote p-4 position-relative custom-blockquote">
+          <p class="blockquote-footer3">Plan Master</p>
+          <div style="width: 100px; height: 100px; overflow: hidden; border-radius: 100px; margin: 0 auto;">
+            <img src="imgs/selfie-3.jpg" alt="Foto del cliente" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <h5 class="testimonial-title mt-3" style="color: #221e1d;">@vinotek</h5>
+          <p class="mt-3 mb-5 bq-p">Cada caja es una joya. El vino, el maridaje, la música… todo curado con un nivel impresionante.</p>
+        </blockquote>
+      </div>
+
+      <div class="col-12 col-md-4 mb-4">
+        <blockquote class="blockquote p-4 position-relative custom-blockquote">
+          <p class="blockquote-footer3">Plan Master</p>
+          <div style="width: 100px; height: 100px; overflow: hidden; border-radius: 100px; margin: 0 auto;">
+            <img src="imgs/selfie-4.jpg" alt="Foto del cliente" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <h5 class="testimonial-title mt-3" style="color: #221e1d;">@house.of.wines</h5>
+          <p class="mt-3 mb-5 bq-p">Al principio dudaba de la calidad de los vinos pero me animé... Super recomiendo.</p>
+        </blockquote>
+      </div>
+
+      <div class="col-12 col-md-4 mb-4">
+        <blockquote class="blockquote p-4 position-relative custom-blockquote">
+          <p class="blockquote-footer3">Plan Master</p>
+          <div style="width: 100px; height: 100px; overflow: hidden; border-radius: 100px; margin: 0 auto;">
+            <img src="imgs/messi.jpg" alt="Foto del cliente" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <h5 class="testimonial-title mt-3" style="color: #221e1d;">@leomessi</h5>
+          <p class="mt-3 mb-5 bq-p">Probamos los vinos con Anto cuando los nenes están en el colegio. Los mejores vinos!!!</p>
+        </blockquote>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- /TESTIMONIALS -->
+
+<!-- WINESWAP -->
+<section class="section-spacing container">
+  <div class="container h-100">
+    <div class="row align-items-center flex-column-reverse flex-lg-row h-100">
+      
+		<!-- Columna de imagen -->
+      	<div class="col-lg-6 text-center">
+        	<img src="imgs/wine-swap.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
+      	</div>
+
+
+    	<!-- Columna de texto-->
+      	<div class="col-12 col-lg-6 d-flex align-items-center text-start px-4 py-5">
+        	<div>
+          		<h2 class="display-5 h2-custom">PROGRAMA WINESWAP</h2>
+          		<p class="lead-custom">
+            	WineSwap permite intercambiar botellas duplicadas con otros socios.<br>
+            	Es fácil. Solo acercate a cualquiera de nuestras bodegas de confianza.
+          		</p>
+          		<a href="/uvaclub-main/detalle.html" class="btn btn-red mt-3">VER MÁS</a>
+        	</div>
+      	</div>
+    </div>
+  </div>
+</section>
+<!-- WINESWAP -->
+
+<section class="section-spacing servicios-bg text-center">
+  <div class="container">
+    <h2 class="h2-custom" style="color: #ebe4da;">MIRÁ OTROS PLANES</h2>
+    <div class="row justify-content-center"> <div class="col-12 col-md-4 mb-4"> <div class="card h-100 p-4" style="background-color: #ebe4da;">
+          <img src="imgs/caja-cool.png" class="mb-3" alt="Servicio">
+          <h3 class="h3-custom"><span style="color: #f54f48;">PLAN</span> <span style="font-family: schibsted grotesk;">COOL</span></h3>
+          <p class="h3-custom" style="color: #000000;">$49.999 <small>/ mes</small></p>
+
+          <p>
+            <ul class="no-dots lista-plan">
+              <li>
+                ✔ 2 Vinos Classic
+              </li>
+              <li>
+                ✔ 1 Maridaje Gourmet
+              </li>
+              <li>
+                ✔ Disco de Vinilo
+              </li>
+              <li>
+                <span class="thick-strike1">---------------------------------</span>
+              </li>
+              <li>
+                <span class="thick-strike1">-----------------------------</span>
+              </li>
+              <li>
+                <span class="thick-strike1">---------------------</span>
+              </li>
+            </ul>
+          </p>
+
+          <a href="/uvaclub-main/detalle.html" class="btn" style="color:#ebe4da; background-color: #000000">VER MÁS</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mb-4"> <div class="card h-100 p-4" style="background-color: #e9b44c;">
+          <img src="imgs/caja-groove.png" class="mb-3" alt="Servicio">
+          <h3 class="h3-custom"><span style="color: #f54f48;">PLAN</span> <span style="font-family: schibsted grotesk;">GROOVE</span></h3>
+          <p class="h3-custom" style="color: #000000;">$59.999 <small>/ mes</small></p>
+
+          <p class="p-custom">
+            <ul class="no-dots lista-plan">
+              <li>
+                ✔ 4 Vinos Classic
+              </li>
+              <li>
+                ✔ 3 Maridaje Gourmet
+              </li>
+              <li>
+                ✔ Disco de Vinilo
+              </li>
+              <li>
+                ✔ Sacacorchos Coleccionable
+              </li>
+              <li>
+                <span class="thick-strike2">-----------------------------</span>
+              </li>
+              <li>
+                <span class="thick-strike2">---------------------</span>
+              </li>
+            </ul>
+          </p>
+
+          <a href="/uvaclub-main/detalle.html" class="btn" style="color:#ebe4da;background-color: #b57d1a">VER MÁS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT FORM: Formulario de contacto -->
+<section class="section-spacing container text-center">
+  <h2 class="h2-custom">Formulario de Contacto</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Tu nombre">
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Tu email">
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="4" placeholder="Tu mensaje"></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark w-100">Enviar Mensaje</button>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- /CONTACT FORM -->
+
+
+<!-- FOOTER: Pie de página -->
+<footer class="text-center py-4">
+  <div class="container">
+    <p class="p-custom" style="color: #ebe4da;">© 2025 UVACLUB. Todos los derechos reservados.</p>
+  </div>
+</footer>
+<!-- /FOOTER -->
+
+<!-- Bootstrap Bundle JS (incluye Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+<!-- Script personalizado para cambiar el navbar al hacer scroll -->
+<script>
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
+
+<!-- Scripts adicionales -->
+<script src="scripts.js"></script>
+	
 </body>
 </html>
