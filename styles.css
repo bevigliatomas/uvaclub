@@ -17,6 +17,9 @@ body {
   scroll-behavior: smooth;
 }
 
+html, body {
+  overflow-x: hidden; 
+}
 
 /* 3. NAVBAR */
 .navbar {
@@ -517,13 +520,40 @@ img.rounded-circle {
   transform: scale(1.05);
 }
 
+.galeria-musica-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .galeria-musica-bg {
+    background-image: url(imgs/bg-lg-3.png);
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .galeria-musica-bg {
+    background-image: url(imgs/bg-md-3.png);
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .galeria-musica-bg {
+    background-image: url(imgs/bg-sm-3.png);
+  }
+}
+
 /* 12. QUE CONTIENE */
 .que-trae-la-caja-bg {
   background-image: url('imgs/bg-sm-2.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  min-height: 500px; /
+  min-height: 500px;
 }
 
 /* Media Query for medium screens */
@@ -542,10 +572,23 @@ img.rounded-circle {
 
 /* 13. GIF */
 .marcas-section {
-  padding-top: 50px; 
+  padding-top: 50px;
   padding-bottom: 20px;
+  text-align: center;
 }
 
+.marcas-section img {
+  width: auto;
+  height: auto;
+  max-width: 100%; /* Por si se excede en desktop */
+}
+
+@media (max-width: 768px) {
+  .marcas-section img {
+    transform: scale(3);         /* Achica al 80% */
+    transform-origin: center;      /* Centra la escala */
+  }
+}
 /* ============================== */
 /* CUSTOM HELPER CLASSES */
 /* ============================== */
