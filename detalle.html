@@ -27,7 +27,7 @@
 <body>
 	
 <!-- NAVBAR: Menú de navegación fijo superior -->
-<nav class="navbar navbar-expand-lg fixed-top">
+<nav class="navbar navbar-expand-lg fixed-top navbar-detalle">
   <div class="container">
     <!-- Logo o nombre del sitio -->
     <a class="navbar-brand" href="index.html">UVACLUB</a>
@@ -73,7 +73,8 @@
     <h2 class="h2-custom">¿QUÉ TRAE LA CAJA?</h2>
 
     <div class="row">
-      <div class="col-6 col-md-3 px-4 mb-4"> <img src="imgs/items-01.png" alt="Elegís tu plan" class="img-fluid mb-3" style="max-width: 150px;">
+      <div class="col-6 col-md-3 px-4 mb-4">
+        <img src="imgs/items-01.png" alt="Elegís tu plan" class="img-fluid mb-3" style="max-width: 150px;">
         <div class="d-flex justify-content-center align-items-center">
           <h2 class="h2-custom mb-0 me-2">5</h2>
           <h5 class="h5-custom mb-0 text-start">VINOS<br>GOURMET</h5>
@@ -103,29 +104,31 @@
           <h5 class="h5-custom mb-0 text-start">SACACORCHOS<br>COLECCIONABLE</h5>
         </div>
       </div>
-    </div> <div class="row justify-content-center"> <div class="col-12 col-md-4 px-4"> <img src="imgs/items-05.png" alt="Item 5" class="img-fluid mb-3" style="max-width: 150px;">
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-6 col-md-4 px-4 mb-4"> <img src="imgs/items-05.png" alt="Item 5" class="img-fluid mb-3" style="max-width: 150px;">
         <div class="d-flex justify-content-center align-items-center">
           <h2 class="h2-custom mb-0 me-2">1</h2>
           <h5 class="h5-custom mb-0 text-start">DESCUENTOS<br>MENSUALES</h5>
         </div>
       </div>
 
-      <div class="col-12 col-md-4 px-4">
-        <img src="imgs/items-06.png" alt="Item 6" class="img-fluid mb-3" style="max-width: 150px;">
+      <div class="col-6 col-md-4 px-4 mb-4"> <img src="imgs/items-06.png" alt="Item 6" class="img-fluid mb-3" style="max-width: 150px;">
         <div class="d-flex justify-content-center align-items-center">
           <h2 class="h2-custom mb-0 me-2">1</h2>
           <h5 class="h5-custom mb-0 text-start">GUIA <br>DE CATA</h5>
         </div>
       </div>
 
-      <div class="col-12 col-md-4 px-4">
-        <img src="imgs/items-07.png" alt="Item 7" class="img-fluid mb-3" style="max-width: 150px;">
+      <div class="col-6 col-md-4 px-4 mb-4"> <img src="imgs/items-07.png" alt="Item 7" class="img-fluid mb-3" style="max-width: 150px;">
         <div class="d-flex justify-content-center align-items-center">
           <h2 class="h2-custom mb-0 me-2">1</h2>
           <h5 class="h5-custom mb-0 text-start">ITEM<br>SORPRESA</h5>
         </div>
       </div>
-    </div> </div>
+    </div>
+  </div>
 </section>
 <!-- QUE TRAE LA CAJA -->
 
@@ -135,18 +138,19 @@
     <div class="row align-items-center flex-column-reverse flex-lg-row h-100">
 
         <div class="col-12 col-lg-6 d-flex align-items-center text-start px-4 py-5">
-            <div>
-                <p class="display-5 h2-custom" style="color: #ebe4da">$64.999 <small>/ mes</small></p>
-                <a href="index.html" class="btn btn-red mt-3 w-100">COMPRAR</a> 
-                <div class="d-flex justify-content-center justify-content-lg-start flex-wrap gap-3 mt-4">
-                    <img src="imgs/pago-01.png" alt="Icono 1" class="img-fluid" style="max-width: 100px;">
-                    <img src="imgs/pago-02.png" alt="Icono 2" class="img-fluid" style="max-width: 66px;">
-                    <img src="imgs/pago-03.png" alt="Icono 3" class="img-fluid" style="max-width: 66px;">
-                    <img src="imgs/pago-04.png" alt="Icono 4" class="img-fluid" style="max-width: 135px;">
-                </div>
-                <p class="lead-custom"></p>
-            </div>
+    <div>
+        <p class="display-5 h2-custom" style="color: #ebe4da">$64.999 <small>/ mes</small></p>
+        <a href="index.html" class="btn btn-red mt-3 w-100">COMPRAR</a> 
+        
+        <div class="d-flex justify-content-center justify-content-lg-start gap-3 mt-4 flex-nowrap marcas-pago-icons">
+            <img src="imgs/pago-01.png" alt="Icono 1" class="img-fluid" style="max-width: 100px;">
+            <img src="imgs/pago-02.png" alt="Icono 2" class="img-fluid" style="max-width: 66px;">
+            <img src="imgs/pago-03.png" alt="Icono 3" class="img-fluid" style="max-width: 66px;">
+            <img src="imgs/pago-04.png" alt="Icono 4" class="img-fluid" style="max-width: 135px;">
         </div>
+        <p class="lead-custom"></p>
+    </div>
+</div>
         <div class="col-lg-6 text-center">
             <img src="imgs/caja-master-2.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
         </div>
@@ -243,8 +247,9 @@
     </div>
   </div>
 </section>
-<!-- WINESWAP -->
+<!-- /WINESWAP -->
 
+<!-- CAJAS -->
 <section class="section-spacing servicios-bg text-center">
   <div class="container">
     <h2 class="h2-custom" style="color: #ebe4da;">MIRÁ OTROS PLANES</h2>
@@ -313,25 +318,28 @@
     </div>
   </div>
 </section>
-
+<!-- /CAJAS -->
 
 <!-- CONTACT FORM: Formulario de contacto -->
-<section class="section-spacing container text-center">
-  <h2 class="h2-custom">Formulario de Contacto</h2>
-  <div class="row justify-content-center">
-    <div class="col-md-6">
-      <form>
-        <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Tu nombre">
-        </div>
-        <div class="mb-3">
-          <input type="email" class="form-control" placeholder="Tu email">
-        </div>
-        <div class="mb-3">
-          <textarea class="form-control" rows="4" placeholder="Tu mensaje"></textarea>
-        </div>
-        <button type="submit" class="btn btn-dark w-100">Enviar Mensaje</button>
-      </form>
+<section class="contact-section section-spacing text-center">
+  <div class="container">
+    <h2 class="h2-custom">CONTACTANOS</h2>
+    <p class="lead-custom mb-5">Si tenés alguna pregunta, no dudes en enviarnos un mensaje directamente desde la web.</p>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Nombre y Apellido" autocomplete="name">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Tu email" autocomplete="email" name="email">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="4" placeholder="Tu mensaje"></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark w-100">Enviar Mensaje</button>
+        </form>
+      </div>
     </div>
   </div>
 </section>
