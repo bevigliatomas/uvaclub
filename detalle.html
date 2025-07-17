@@ -27,25 +27,35 @@
     <!-- Estilos personalizados -->
     <link rel="stylesheet" href="styles.css">
 
-</head>|
+</head>
+
 <body>
 	
 <!-- NAVBAR: Menú de navegación fijo superior -->
 <nav class="navbar navbar-expand-lg fixed-top navbar-detalle">
   <div class="container">
     <!-- Logo o nombre del sitio -->
-    <a class="navbar-brand" href="index.html">UVACLUB</a>
+    <a class="navbar-brand" href="./main.html">UVACLUB</a>
+
     <!-- Botón para mostrar menú en mobile -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <!-- Ítems del menú -->
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html">Planes</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html">Equipo</a></li>
-        <li class="nav-item"><a class="nav-link" href="index.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="./main.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="./main.html">Planes</a></li>
+        <li class="nav-item"><a class="nav-link" href="./main.html">Equipo</a></li>
+        <li class="nav-item"><a class="nav-link" href="#idform2">Contacto</a></li>
+
+        <!-- Ícono de usuario -->
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="#" title="Mi perfil">
+            <i class="bi bi-person-circle" style="font-size: 1.5rem;"></i>
+          </a>
+        </li>
       </ul>
     </div>
   </div>
@@ -53,7 +63,7 @@
 <!-- /NAVBAR -->
 
 <!-- HERO -->
-<section class="hero-section-detalle">
+<section id="idhero2" class="hero-section-detalle">
   <div class="container h-100">
     <div class="row align-items-center h-100">
       
@@ -63,8 +73,9 @@
 
       <div class="col-12 col-lg-6 text-center text-lg-start px-4 py-5" >
         <h1 class="h1-custom" style="color: #ebe4da">PLAN<br>MASTER</h1>
-        <p class="h4-custom" style="color: #ebe4da">Nuestro plan para conocedores.<br>La selección exclusiva de vinos que necesitabas, en la puerta de tu casa.</p>
-        <a href="index.html" class="btn btn-red mt-3">COMPRAR</a>
+        <p class="display-5 h2-custom" style="color: #ebe4da">$64.999 <small>/ mes</small></p>
+        <p class="h4-custom" style="color: #ebe4da">Ideal para paladares curiosos, amantes del vino y coleccionistas de experiencias.</p>
+        <a href="./index.html" class="btn btn-red mt-3">COMPRAR</a>
       </div>
     </div>
   </div>
@@ -72,7 +83,7 @@
 <!-- /HERO -->
 
 <!-- QUE TRAE LA CAJA -->
-<section class="section-spacing text-center que-trae-la-caja-bg">
+<section id="idquetrae" class="section-spacing text-center que-trae-la-caja-bg">
   <div class="container">
     <h2 class="h2-custom">¿QUÉ TRAE LA CAJA?</h2>
 
@@ -137,14 +148,14 @@
 <!-- QUE TRAE LA CAJA -->
 
 <!-- COMPRAR -->
-<section class="hero-section-detalle">
+<section id="idbuy" class="hero-section-detalle">
   <div class="container h-100">
     <div class="row align-items-center flex-column-reverse flex-lg-row h-100">
 
         <div class="col-12 col-lg-6 d-flex align-items-center text-start px-4 py-5">
     <div>
         <p class="display-5 h2-custom" style="color: #ebe4da">$64.999 <small>/ mes</small></p>
-        <a href="index.html" class="btn btn-red mt-3 w-100">COMPRAR</a> 
+        <a href="./index.html" class="btn btn-red mt-3 w-100">COMPRAR</a> 
         
         <div class="d-flex justify-content-center justify-content-lg-start gap-3 mt-4 flex-nowrap marcas-pago-icons">
             <img src="imgs/pago-01.png" alt="Icono 1" class="img-fluid" style="max-width: 100px;">
@@ -164,7 +175,7 @@
 <!-- COMPRAR -->
 
 <!-- TESTIMONIALS: Opiniones de clientes -->
-<section id="testimonials" class="py-5 testimonials-single-color">
+<section id="testimonials2" class="py-5 testimonials-single-color">
   <div class="container">
     <div class="row text-center">
       <div class="col-12 text-center mb-5">
@@ -233,7 +244,7 @@
 <!-- /TESTIMONIALS -->
 
 <!-- WINESWAP -->
-<section class="section-spacing container">
+<section id="idswap" class="section-spacing container">
   <div class="container h-100">
     <div class="row align-items-center flex-column-reverse flex-lg-row h-100">
       
@@ -251,7 +262,7 @@
             	WineSwap permite intercambiar botellas duplicadas con otros socios.<br>
             	Es fácil. Solo acercate a cualquiera de nuestras bodegas de confianza.
           		</p>
-          		<a href="index.html" class="btn btn-red mt-3">VER MÁS</a>
+          		<a href="./index.html" class="btn btn-red mt-3">VER MÁS</a>
         	</div>
       	</div>
     </div>
@@ -260,7 +271,7 @@
 <!-- /WINESWAP -->
 
 <!-- CAJAS -->
-<section class="section-spacing servicios-bg text-center">
+<section id="idcajas2" class="section-spacing servicios-bg text-center">
   <div class="container">
     <h2 class="h2-custom" style="color: #ebe4da;">MIRÁ OTROS PLANES</h2>
     <div class="row justify-content-center"> <div class="col-12 col-md-4 mb-4"> <div class="card h-100 p-4" style="background-color: #ebe4da;">
@@ -291,7 +302,7 @@
             </ul>
           </p>
 
-          <a href="index.html" class="btn" style="color:#ebe4da; background-color: #000000">VER MÁS</a>
+          <a href="./main.html" class="btn" style="color:#ebe4da; background-color: #000000">VER MÁS</a>
         </div>
       </div>
       <div class="col-12 col-md-4 mb-4"> <div class="card h-100 p-4" style="background-color: #e9b44c;">
@@ -322,7 +333,7 @@
             </ul>
           </p>
 
-          <a href="index.html" class="btn" style="color:#ebe4da;background-color: #b57d1a">VER MÁS</a>
+          <a href="./index.html" class="btn" style="color:#ebe4da;background-color: #b57d1a">VER MÁS</a>
         </div>
       </div>
     </div>
@@ -331,7 +342,7 @@
 <!-- /CAJAS -->
 
 <!-- CONTACT FORM: Formulario de contacto -->
-<section class="contact-section section-spacing text-center">
+<section id="idform2" class="contact-section section-spacing text-center">
   <div class="container">
     <h2 class="h2-custom">CONTACTANOS</h2>
     <p class="lead-custom mb-5">Si tenés alguna pregunta, no dudes en enviarnos un mensaje directamente desde la web.</p>
@@ -347,14 +358,13 @@
           <div class="mb-3">
             <textarea class="form-control" rows="4" placeholder="Tu mensaje"></textarea>
           </div>
-          <button type="submit" class="btn btn-dark w-100">Enviar Mensaje</button>
+          <button type="submit" class="btn btn-red w-100">Enviar Mensaje</button>
         </form>
       </div>
     </div>
   </div>
 </section>
 <!-- /CONTACT FORM -->
-
 
 <!-- FOOTER: Pie de página -->
 <footer id="footer" class="footer-link py-5 pb-2">
@@ -371,21 +381,21 @@
         <div class="col-6 col-md-6 col-lg-3">
           <h6 class="fw-bold">Explorá UvaClub</h6>
           <ul class="list-unstyled mt-3">
-            <li><a href="#idquees" class="footer-link">¿Qué es UvaClub?</a></li>
-            <li><a href="#idquees" class="footer-link">Cómo funciona</a></li>
-            <li><a href="#idcajas" class="footer-link">Planes y precios</a></li>
-            <li><a href="#idfaqs" class="footer-link">Preguntas frecuentes</a></li>
-            <li><a href="#idform" class="footer-link">Contacto</a></li>
+            <li><a href="./main.html" class="footer-link">¿Qué es UvaClub?</a></li>
+            <li><a href="./main.html" class="footer-link">Cómo funciona</a></li>
+            <li><a href="./main.html" class="footer-link">Planes y precios</a></li>
+            <li><a href="./main.html" class="footer-link">Preguntas frecuentes</a></li>
+            <li><a href="#idform2" class="footer-link">Contacto</a></li>
           </ul>
         </div>
 
         <div class="col-6 col-md-6 col-lg-3">
           <h6 class="fw-bold">Tu experiencia</h6>
           <ul class="list-unstyled mt-3">
-            <li><a href="#idcajas" class="footer-link">Descubrí los vinos</a></li>
-            <li><a href="#idmusic" class="footer-link">Maridajes & música</a></li>
+            <li><a href="./main.html" class="footer-link">Descubrí los vinos</a></li>
+            <li><a href="./main.html" class="footer-link">Maridajes & música</a></li>
             <li><a href="#idswap" class="footer-link">WineSwap</a></li>
-            <li><a href="#idcajas" class="footer-link">Ediciones anteriores</a></li>
+            <li><a href="./main.html" class="footer-link">Ediciones anteriores</a></li>
             <li><a href="#" class="footer-link">Términos y condiciones</a></li>
           </ul>
         </div>

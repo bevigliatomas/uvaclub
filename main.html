@@ -33,17 +33,26 @@
   <div class="container">
     <!-- Logo o nombre del sitio -->
     <a class="navbar-brand" href="#">UVACLUB</a>
+
     <!-- Botón para mostrar menú en mobile -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <!-- Ítems del menú -->
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="main.html">Planes</a></li>
-        <li class="nav-item"><a class="nav-link" href="main.html">Equipo</a></li>
-        <li class="nav-item"><a class="nav-link" href="main.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="#idcajas">Planes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#idnos">Equipo</a></li>
+        <li class="nav-item"><a class="nav-link" href="#idform">Contacto</a></li>
+
+        <!-- Ícono de usuario -->
+        <li class="nav-item">
+          <a class="nav-link d-flex align-items-center" href="#">
+            <i class="bi bi-person-circle" style="font-size: 1.5rem;"></i>
+          </a>
+        </li>
       </ul>
     </div>
   </div>
@@ -58,7 +67,7 @@
       <div class="col-12 col-lg-6 text-center text-lg-start px-4 py-5">
         <h1 class="h1-custom">UN VINO<br>QUE SUENA A VOS</h1>
         <p class="h4-custom">Cada mes, vinos seleccionados con propósito, directo a tu puerta.</p>
-        <a href="main.html" class="btn btn-red mt-3">VER MÁS</a>
+        <a href="./main.html" class="btn btn-red mt-3">VER MÁS</a>
       </div>
 
       <div class="hero-img-container">
@@ -72,7 +81,8 @@
 
 <!-- GIF -->
 <section class="marcas-section">
-  <img src="imgs/marcas.gif" alt="marcas" class="img-fluid"> </section>
+  <img src="imgs/marcas.gif" alt="marcas" class="img-fluid"> 
+</section>
 <!-- /GIF -->
 
 <!-- QUE ES UVACLUB -->
@@ -102,17 +112,34 @@
 
 <!-- NOSOTROS -->
 <section id="idnos" class="section-spacing container">
-  <div class="row align-items-center">
+  <div class="row align-items-center g-5">
     <!-- Columna de imagen -->
-    <div class="col-lg-6 text-center mb-4 mb-lg-0">
-      <img src="imgs/nosotros.png" class="img-fluid img-rounded" alt="Imagen ilustrativa">
+    <div class="col-lg-7 text-center mb-4 mb-lg-0">
+      <img src="imgs/nosotros.png" class="img-fluid img-rounded w-100" alt="Imagen ilustrativa">
     </div>
     <!-- Columna de texto -->
-    <div class="col-lg-6">
+    <div class="col-lg-5">
       <h2 class="h2-custom">NOSOTROS</h2>
-      <p class="lead-custom"> <span class="h4-custom">Somos Bruno, Thiago y Zoe.</span><br>La idea nació entre risas, discos y copas. Bruno es sommelier y eligió hacer del vino una experiencia sensorial; Thiago vive entre guitarras y playlists; y Zoe, con ojo creativo, le dio forma a todo.
-      <br>Unimos nuestras pasiones y creamos UvaClub: una caja pensada para que disfrutes vino, música y buenos momentos, sin moverte de casa.</p>
-      <a href="main.html" class="btn btn-red mt-3">CONOCE MÁS</a>
+      <p class="lead-custom">
+        <span class="h4-custom">Somos Bruno, Thiago y Zoe.</span><br>
+        La idea nació entre risas, discos y copas. Bruno es sommelier y eligió hacer del vino una experiencia sensorial; Thiago vive entre guitarras y playlists; y Zoe, con ojo creativo, le dio forma a todo.
+        <br>Unimos nuestras pasiones y creamos UvaClub: una caja pensada para que disfrutes vino, música y buenos momentos, sin moverte de casa.
+      </p>
+      <br><br>
+      <div class="row text-center">
+        <div class="col-4 px-4">
+          <img src="imgs/icon-nos-01.png" alt="5 Años Brindando Juntos" style="width: 75px; height: auto; margin-bottom: 15px;">
+          <h4 class="h4-custom">5 Años Brindando Juntos</h4>
+        </div>
+        <div class="col-4 px-4">
+          <img src="imgs/icon-nos-02.png" alt="Llegamos a Cada Rincón del País" style="width: 75px; height: auto; margin-bottom: 15px;">
+          <h4 class="h4-custom">Llegamos a Cada Rincón del País</h4>
+        </div>
+        <div class="col-4 px-4">
+          <img src="imgs/icon-nos-03.png" alt="Somos Muchos, Y Cada Vez Más" style="width: 75px; height: auto; margin-bottom: 15px;">
+          <h4 class="h4-custom">Somos Muchos, Y Cada Vez Más</h4>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -155,7 +182,7 @@
             </ul>
           </p>
 
-          <a href="main.html" class="btn btn-red">VER MÁS</a>
+          <a href="./main.html" class="btn btn-red">VER MÁS</a>
         </div>
       </div>
       <!-- Columna 2 -->
@@ -189,7 +216,7 @@
             </ul>
           </p>
 
-          <a href="main.html" class="btn btn-red">VER MÁS</a>
+          <a href="./main.html" class="btn btn-red">VER MÁS</a>
         </div>
       </div>
       <!-- Columna 3 -->
@@ -223,7 +250,7 @@
             </ul>
           </p>
 
-          <a href="detalle.html" class="btn btn-red">VER MÁS</a>
+          <a href="./detalle.html" class="btn btn-red">VER MÁS</a>
         </div>
       </div>
       <!-- ... repetir estructura para más servicios ... -->
@@ -235,29 +262,28 @@
 <!-- POR QUE -->
 <section id="idporque" class="section-spacing container text-center">
   <h2 class="h2-custom">¿POR QUÉ UVACLUB?</h2>
-   <!-- <p class="mt-3 mb-5">Contá quién sos, qué hacés y por qué debería interesarle al visitante.</p> -->
   <div class="row">
     <!-- Cuatro columnas informativas -->
-    <div class="col-md-3" style="padding-left: 35px; padding-right: 35px;">
+    <div class="col-6 col-md-3" style="padding-left: 35px; padding-right: 35px;">
       <img src="imgs/porque-foto-01.png" alt="Elegís tu plan" style="width: 150px; height: auto; margin-bottom: 15px;">
       <h4 class="h4-custom">Vino que vale la pena</h4>
       <p class="p-custom">Selección curada por sommeliers para sorprenderte.</p>
     </div>
-    <div class="col-md-3" style="padding-left: 35px; padding-right: 35px;">
+    <div class="col-6 col-md-3" style="padding-left: 35px; padding-right: 35px;">
       <img src="imgs/porque-foto-02.png" alt="Elegís tu plan" style="width: 150px; height: auto; margin-bottom: 15px;">
       <h4 class="h4-custom">Maridaje que sorprende</h4>
       <p class="p-custom"> Sabores pensados para potenciar lo mejor del vino.</p>
     </div>
-    <div class="col-md-3" style="padding-left: 35px; padding-right: 35px;">
+    <div class="col-6 col-md-3" style="padding-left: 35px; padding-right: 35px;">
       <img src="imgs/porque-foto-03.png" alt="Elegís tu plan" style="width: 150px; height: auto; margin-bottom: 15px;">
       <h4 class="h4-custom">Música que acompaña</h4>
       <p class="p-custom">Disco exclusivo para conectar con el mood de cada caja.</p>
     </div>
-    <div class="col-md-3" style="padding-left: 35px; padding-right: 35px;">
+    <div class="col-6 col-md-3" style="padding-left: 35px; padding-right: 35px;">
       <img src="imgs/porque-foto-04.png" alt="Elegís tu plan" style="width: 150px; height: auto; margin-bottom: 15px;">
       <h4 class="h4-custom">Todo sin moverte</h4>
       <p class="p-custom">Elegí tu plan y nosotros nos encargamos del resto.
-</p>
+      </p>
     </div>
   </div>
 </section>
@@ -301,14 +327,18 @@
       </div>
 
     </div>
+
     <!-- Controles -->
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleriaD" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
+      <img src="./imgs/l-arrow.png" alt="Anterior" style="width: 40px; height: 40px;">
     </button>
+
     <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleriaD" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
+      <img src="./imgs/r-arrow.png" alt="Siguiente" style="width: 40px; height: 40px;">
     </button>
+
   </div>
+
 </section>
 </div>
 <!-- /GALERÍA MUSICA -->
@@ -318,12 +348,12 @@
   <h2 class="mb-4 h2-custom">MOMENTOS UVACLUB</h2>
   <p class="mb-5 lead-custom">Nuestros suscriptores compartiendo lo que más importa: una copa, buena música y grandes momentos.</p>
   <div class="row g-4">
-    <div class="col-md-4"><img src="imgs/galeria-1.png" class="img-fluid img-rounded rounded" alt="Imagen 1"></div>
-    <div class="col-md-4"><img src="imgs/galeria-2.png" class="img-fluid img-rounded rounded" alt="Imagen 2"></div>
-    <div class="col-md-4"><img src="imgs/galeria-3.png" class="img-fluid img-rounded rounded" alt="Imagen 3"></div>
-	<div class="col-md-4"><img src="imgs/galeria-4.png" class="img-fluid img-rounded rounded" alt="Imagen 1"></div>
-    <div class="col-md-4"><img src="imgs/galeria-5.png" class="img-fluid img-rounded rounded" alt="Imagen 2"></div>
-    <div class="col-md-4"><img src="imgs/galeria-6.png" class="img-fluid img-rounded rounded" alt="Imagen 3"></div>
+    <div class="col-6 col-md-4"><img src="imgs/galeria-1.png" class="img-fluid img-rounded rounded" alt="Imagen 1"></div>
+    <div class="col-6 col-md-4"><img src="imgs/galeria-2.png" class="img-fluid img-rounded rounded" alt="Imagen 2"></div>
+    <div class="col-6 col-md-4"><img src="imgs/galeria-3.png" class="img-fluid img-rounded rounded" alt="Imagen 3"></div>
+	<div class="col-6 col-md-4"><img src="imgs/galeria-4.png" class="img-fluid img-rounded rounded" alt="Imagen 1"></div>
+    <div class="col-6 col-md-4"><img src="imgs/galeria-5.png" class="img-fluid img-rounded rounded" alt="Imagen 2"></div>
+    <div class="col-6 col-md-4"><img src="imgs/galeria-6.png" class="img-fluid img-rounded rounded" alt="Imagen 3"></div>
   </div>
 </section>
 <!-- GALERIA -->
@@ -483,7 +513,7 @@
           <div class="mb-3">
             <textarea class="form-control" rows="4" placeholder="Tu mensaje"></textarea>
           </div>
-          <button type="submit" class="btn btn-dark w-100">Enviar Mensaje</button>
+          <button type="submit" class="btn btn-red w-100">Enviar Mensaje</button>
         </form>
       </div>
     </div>
