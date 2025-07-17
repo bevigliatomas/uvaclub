@@ -251,44 +251,6 @@ section h2 {
   margin: 0 auto;
 }
 
-@media (max-width: 991.98px) { /* Para pantallas más pequeñas que 'lg' (mobile y tablet) */
-  .marcas-pago-icons {
-    flex-wrap: nowrap !important; /* Asegura que no salten de línea */
-    
-    /* ¡IMPORTANTE! Aquí NO especificamos 'gap'. Dejamos que el 'gap-3' del HTML haga su trabajo. */
-    
-    /* Permite scroll horizontal si aún así no caben, para evitar que se salgan */
-    overflow-x: auto; 
-    
-    /* Propiedades opcionales para ocultar la barra de scroll visualmente */
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-  .marcas-pago-icons::-webkit-scrollbar {
-    display: none;
-  }
-
-  .marcas-pago-icons img {
-    max-width: none !important; /* Anula el 'max-width' inline para que puedan encogerse libremente */
-    height: auto; /* Mantiene la proporción de la imagen */
-    
-    /* ¡CAMBIO CLAVE AQUÍ! Calculamos el ancho de cada imagen */
-    /* Considerando el 'gap-3' (1rem) de Bootstrap, hay 3 gaps entre 4 imágenes. */
-    /* La fórmula es: (100% del contenedor - (3 * 1rem de gap)) / 4 imágenes */
-    /* Esto resulta en: calc(25% - 0.75rem) */
-    width: calc(25% - 0.75rem) !important; /* ¡Usa !important para asegurar que se aplique! */
-    
-    flex-grow: 0;   /* No permite que crezcan más allá de este ancho calculado */
-    flex-shrink: 1; /* Permite que se encojan de este ancho si el espacio es aún más limitado */
-    flex-basis: auto; /* La base de su tamaño la define el 'width' forzado */
-    
-    object-fit: contain; /* Asegura que la imagen mantenga su aspecto dentro de su espacio */
-    padding: 0; 
-    margin: 0; 
-  }
-}
-
 /* 6. CARDS */
 .card {
   border: none;
@@ -536,12 +498,6 @@ section h2 {
   border-left: 8px solid #221e1d !important; /* Unifica el color del borde a este color oscuro */
 }
 
-@media (max-width: 767.98px) {
-  #testimonials .col-12.col-md-4:not(:last-child) {
-    margin-bottom: 20px; /* Espacio entre columnas cuando se apilan */
-  }
-}
-
 /* 8. FORMULARIO */
 form .form-control {
   border-radius: 8px;
@@ -563,20 +519,6 @@ form button.btn-primary {
   background-size: cover;
   background-position: center;
   min-height: 500px; /* Asegura una altura mínima para que el fondo sea visible. Ajusta si es necesario. */
-}
-
-/* Media Query para pantallas medianas (ej. 768px y más, que es el breakpoint 'md' de Bootstrap) */
-@media (min-width: 768px) {
-  .faq-bg {
-    background-image: url('imgs/bg-md.png'); /* Cambia a la imagen para pantallas medianas */
-  }
-}
-
-/* Media Query para pantallas grandes (ej. 992px y más, que es el breakpoint 'lg' de Bootstrap) */
-@media (min-width: 992px) {
-  .faq-bg {
-    background-image: url('imgs/bg-lg.png'); /* Cambia a la imagen para pantallas grandes */
-  }
 }
 
 /* 9. FOOTER */
@@ -617,27 +559,6 @@ img.rounded-circle {
   background-repeat: no-repeat;
 }
 
-/* Desktop */
-@media (min-width: 992px) {
-  .galeria-musica-bg {
-    background-image: url(imgs/bg-lg-3.png);
-  }
-}
-
-/* Tablet */
-@media (min-width: 768px) and (max-width: 991px) {
-  .galeria-musica-bg {
-    background-image: url(imgs/bg-md-3.png);
-  }
-}
-
-/* Mobile */
-@media (max-width: 767px) {
-  .galeria-musica-bg {
-    background-image: url(imgs/bg-sm-3.png);
-  }
-}
-
 /* 12. QUE CONTIENE */
 .que-trae-la-caja-bg {
   background-image: url('imgs/bg-sm-2.png');
@@ -645,20 +566,6 @@ img.rounded-circle {
   background-size: cover;
   background-position: center center;
   min-height: 500px;
-}
-
-/* Media Query for medium screens */
-@media (min-width: 768px) {
-  .que-trae-la-caja-bg {
-    background-image: url('imgs/bg-md-2.png');
-  }
-}
-
-/* Media Query for large screens */
-@media (min-width: 992px) {
-  .que-trae-la-caja-bg {
-    background-image: url('imgs/bg-lg-2.png');
-  }
 }
 
 /* 13. GIF */
@@ -674,12 +581,13 @@ img.rounded-circle {
   max-width: 100%; /* Por si se excede en desktop */
 }
 
-@media (max-width: 768px) {
-  .marcas-section img {
-    transform: scale(3);         /* Achica al 80% */
-    transform-origin: center;      /* Centra la escala */
-  }
+/* MUSICA DETALLE */
+.bg-musica-master {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 /* ============================== */
 /* CUSTOM HELPER CLASSES */
 /* ============================== */
@@ -788,7 +696,125 @@ img.rounded-circle {
 /* MEDIA QUERIES */
 /* ============================== */
 
-/* Media query para dispositivos más pequeños (mobile) */
+@media (max-width: 991.98px) { /* Para pantallas más pequeñas que 'lg' (mobile y tablet) */
+  .marcas-pago-icons {
+    flex-wrap: nowrap !important; /* Asegura que no salten de línea */
+    
+    /* ¡IMPORTANTE! Aquí NO especificamos 'gap'. Dejamos que el 'gap-3' del HTML haga su trabajo. */
+    
+    /* Permite scroll horizontal si aún así no caben, para evitar que se salgan */
+    overflow-x: auto; 
+    
+    /* Propiedades opcionales para ocultar la barra de scroll visualmente */
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .marcas-pago-icons::-webkit-scrollbar {
+    display: none;
+  }
+
+  .marcas-pago-icons img {
+    max-width: none !important; /* Anula el 'max-width' inline para que puedan encogerse libremente */
+    height: auto; /* Mantiene la proporción de la imagen */
+    
+    /* ¡CAMBIO CLAVE AQUÍ! Calculamos el ancho de cada imagen */
+    /* Considerando el 'gap-3' (1rem) de Bootstrap, hay 3 gaps entre 4 imágenes. */
+    /* La fórmula es: (100% del contenedor - (3 * 1rem de gap)) / 4 imágenes */
+    /* Esto resulta en: calc(25% - 0.75rem) */
+    width: calc(25% - 0.75rem) !important; /* ¡Usa !important para asegurar que se aplique! */
+    
+    flex-grow: 0;   /* No permite que crezcan más allá de este ancho calculado */
+    flex-shrink: 1; /* Permite que se encojan de este ancho si el espacio es aún más limitado */
+    flex-basis: auto; /* La base de su tamaño la define el 'width' forzado */
+    
+    object-fit: contain; /* Asegura que la imagen mantenga su aspecto dentro de su espacio */
+    padding: 0; 
+    margin: 0; 
+  }
+}
+
+@media (max-width: 767.98px) {
+  #testimonials .col-12.col-md-4:not(:last-child) {
+    margin-bottom: 20px; /* Espacio entre columnas cuando se apilan */
+  }
+}
+
+@media (min-width: 768px) {
+  .faq-bg {
+    background-image: url('imgs/bg-md.png'); /* Cambia a la imagen para pantallas medianas */
+  }
+}
+
+/* Media Query para pantallas grandes (ej. 992px y más, que es el breakpoint 'lg' de Bootstrap) */
+@media (min-width: 992px) {
+  .faq-bg {
+    background-image: url('imgs/bg-lg.png'); /* Cambia a la imagen para pantallas grandes */
+  }
+}
+
+@media (min-width: 992px) {
+  .galeria-musica-bg {
+    background-image: url(imgs/bg-lg-3.png);
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .galeria-musica-bg {
+    background-image: url(imgs/bg-md-3.png);
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .galeria-musica-bg {
+    background-image: url(imgs/bg-sm-3.png);
+  }
+}
+
+/* Media Query for medium screens */
+@media (min-width: 768px) {
+  .que-trae-la-caja-bg {
+    background-image: url('imgs/bg-md-2.png');
+  }
+}
+
+/* Media Query for large screens */
+@media (min-width: 992px) {
+  .que-trae-la-caja-bg {
+    background-image: url('imgs/bg-lg-2.png');
+  }
+}
+
+@media (max-width: 768px) {
+  .marcas-section img {
+    transform: scale(3);         /* Achica al 80% */
+    transform-origin: center;      /* Centra la escala */
+  }
+}
+
+/* Mobile first (por defecto) */
+@media (max-width: 767.98px) {
+  .bg-musica-master {
+    background-image: url('imgs/fondo-prueba-sm.png');
+  }
+}
+
+/* Tablets (≥768px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .bg-musica-master {
+    background-image: url('imgs/fondo-prueba-md.png');
+  }
+}
+
+/* Desktop (≥992px) */
+@media (min-width: 992px) {
+  .bg-musica-master {
+    background-image: url('imgs/fondo-prueba.png');
+  }
+} 
+
 @media (max-width: 991.98px) {
   .hero-section {
     position: relative;
@@ -839,7 +865,6 @@ img.rounded-circle {
   }
 }
 
-/* --- MEDIA QUERY PARA PANTALLAS MEDIANAS ESPECÍFICAMENTE --- */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .hero-section .col-12.col-lg-6.text-center.px-4.py-5 {
     order: initial;
